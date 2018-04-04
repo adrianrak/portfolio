@@ -1,0 +1,73 @@
+
+
+/* Variables */
+
+$main-color: #02AC46;
+$bright-color: #FFF;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+header {
+    background-color: #1BB358;
+    position: fixed;
+    width: 100%;
+    border-bottom: 2px solid #32BA68;
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 57px;
+        h2 {
+            color: $bright-color;
+        }
+        ul {
+            display: flex;
+            margin: 0;
+			padding: 0;
+            list-style-type: none;
+            a {
+                padding: 20px;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $bright-color;
+                &:hover,
+                &:active {
+                    color: $main-color;
+                    background-color: $bright-color;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}
+.hero {
+    background-color: $main-color;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .title {
+        color: $bright-color;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 50px;
+        h1 {
+            font-size: 50px;
+        }
+        h3 {
+            font-size: 30px;
+        }
+    }
+}

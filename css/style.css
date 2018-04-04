@@ -1,0 +1,58 @@
+/* Variables */
+body {
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+header {
+  background-color: #1BB358;
+  position: fixed;
+  width: 100%;
+  border-bottom: 2px solid #32BA68; }
+  header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 57px; }
+    header nav h2 {
+      color: #FFF; }
+    header nav ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style-type: none; }
+      header nav ul a {
+        padding: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #FFF; }
+        header nav ul a:hover, header nav ul a:active {
+          color: #02AC46;
+          background-color: #FFF;
+          transition: 0.5s; }
+
+.hero {
+  background-color: #02AC46;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .hero .title {
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 50px; }
+    .hero .title h1 {
+      font-size: 50px; }
+    .hero .title h3 {
+      font-size: 30px; }
+
+/*# sourceMappingURL=style.css.map */
