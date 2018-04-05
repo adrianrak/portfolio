@@ -15,7 +15,6 @@ body {
 
 header {
   background-color: #1BB358;
-  position: fixed;
   width: 100%;
   border-bottom: 2px solid #32BA68; }
   header nav {
@@ -25,17 +24,21 @@ header {
     height: 57px; }
     header nav h2 {
       color: #FFF; }
-    header nav ul {
+    header nav .topnav {
       display: flex;
       margin: 0;
       padding: 0;
       list-style-type: none; }
-      header nav ul a {
+      header nav .topnav .icon {
+        display: none;
+        font-size: 20px;
+        padding: 10px; }
+      header nav .topnav a {
         padding: 20px;
         text-decoration: none;
         text-transform: uppercase;
         color: #FFF; }
-        header nav ul a:hover {
+        header nav .topnav a:hover {
           color: #02AC46;
           background-color: #FFF;
           transition: 0.5s; }
@@ -58,6 +61,7 @@ header {
     .hero .title h3 {
       font-size: 30px; }
 
+/* Section About me */
 .aboutMe {
   width: 80%;
   margin: 0 auto;
@@ -79,7 +83,23 @@ header {
       height: 200px; }
     .aboutMe .about p {
       padding: 15px; }
+  .aboutMe button {
+    background-color: #02AC46;
+    border: none;
+    height: 35px;
+    cursor: pointer; }
+    .aboutMe button a {
+      color: #FFF;
+      text-decoration: none;
+      padding: 10px;
+      font-weight: bold; }
+    .aboutMe button:hover {
+      background-color: #FFF;
+      border: 1px solid #02AC46; }
+      .aboutMe button:hover a {
+        color: #02AC46; }
 
+/* Section Skills */
 .skills {
   margin: 0 auto;
   background-color: #F1F1F1;
@@ -96,6 +116,7 @@ header {
   .skills .grid-container {
     width: 80%;
     margin: 0 auto;
+    padding-bottom: 50px;
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-items: center; }
@@ -130,5 +151,93 @@ header {
           display: inline; }
         .skills .grid-container .skillsIcon:hover .fa-bold {
           background-color: #02AC46; }
+
+/*Section Projects*/
+.projects {
+  height: 100%;
+  margin: 0 auto;
+  padding-bottom: 50px; }
+  .projects h3 {
+    width: 80%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-bottom: 2px solid #262626;
+    text-align: center; }
+  .projects .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding-top: 50px; }
+    .projects .slideshow-container .mySlides {
+      display: none; }
+      .projects .slideshow-container .mySlides img {
+        width: 100%;
+        height: 500px;
+        border: 2px solid #262626; }
+      .projects .slideshow-container .mySlides .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center; }
+    .projects .slideshow-container .prev, .projects .slideshow-container .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      background-color: #262626;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0; }
+      .projects .slideshow-container .prev:hover, .projects .slideshow-container .next:hover {
+        background-color: #02AC46; }
+    .projects .slideshow-container .next {
+      right: 0;
+      border-radius: 3px 0 0 3px; }
+  .projects .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #262626;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease; }
+    .projects .dot:hover {
+      background-color: #02AC46; }
+  .projects .active {
+    background-color: #02AC46; }
+
+/* Button Scroll */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #02AC46;
+  color: #FFF;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px; }
+
+#myBtn:hover {
+  background-color: #FFF;
+  color: #02AC46;
+  border: 1px solid #02AC46; }
+
+/* Media queries */
+@media (max-width: 767px) {
+  /* header */ }
 
 /*# sourceMappingURL=style.css.map */

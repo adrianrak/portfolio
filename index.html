@@ -8,14 +8,17 @@
         <link rel="stylesheet" type="text/css" href="./css/style.css">
     </head>
     <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+        
         <header>
             <nav class="container">
                 <h2><i class="fas fa-code"></i></h2>
-                <ul>
+                <ul class="topnav" id="myTopnav">
                     <li><a href="#sectionAboutMe">O mnie</a></li>
                     <li><a href="#sectionSkills">Umiejętności</a></li>
-                    <li><a href="#">Projekty</a></li>
+                    <li><a href="#sectionProjects">Projekty</a></li>
                     <li><a href="#">Kontakt</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
                 </ul>
             </nav>
             
@@ -114,8 +117,41 @@
                 </div>
             </div>
         </section>
-        
+        <section class="projects" id="sectionProjects">
+            <h3>Projekty</h3>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="./images/project_1.png">
+                    <div class="caption">
+                        <div class="text">Caption Text</div>
+                    </div>
+                </div>
+                  
+                <div class="mySlides fade">
+                    <img src="./images/project_2.png">
+                    <div class="caption">
+                        <div class="text">Caption Two</div>
+                    </div>
+                </div>
 
+                <div class="mySlides fade">
+                    <img src="./images/project_3.png">
+                    <div class="caption">
+                        <div class="text">Caption Two</div>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </section>
+
+        
         <script type="text/javascript" src="js/scripts.js"></script>
     </body>
 </html>
