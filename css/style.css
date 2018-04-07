@@ -168,7 +168,7 @@ header {
     max-width: 1000px;
     position: relative;
     margin: auto;
-    padding-top: 50px; }
+    margin-top: 50px; }
     .projects .slideshow-container .mySlides {
       display: none; }
       .projects .slideshow-container .mySlides img {
@@ -176,13 +176,42 @@ header {
         height: 500px;
         border: 2px solid #262626; }
       .projects .slideshow-container .mySlides .text {
+        visibility: hidden;
         color: #f2f2f2;
         font-size: 15px;
         padding: 8px 12px;
         position: absolute;
-        bottom: 8px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
         width: 100%;
-        text-align: center; }
+        height: 500px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .projects .slideshow-container .mySlides .text h5 {
+          font-size: 25px; }
+        .projects .slideshow-container .mySlides .text button {
+          width: 50px;
+          height: 50px;
+          font-size: 25px;
+          cursor: pointer;
+          background-color: #FFF;
+          border: none;
+          margin: 10px; }
+          .projects .slideshow-container .mySlides .text button a {
+            color: #262626; }
+          .projects .slideshow-container .mySlides .text button:hover {
+            background-color: #262626;
+            border: 2px solid #FFF; }
+            .projects .slideshow-container .mySlides .text button:hover a {
+              color: #FFF; }
+      .projects .slideshow-container .mySlides:hover .text {
+        visibility: visible;
+        background-color: rgba(38, 38, 38, 0.8); }
     .projects .slideshow-container .prev, .projects .slideshow-container .next {
       cursor: pointer;
       position: absolute;
@@ -235,6 +264,44 @@ header {
   background-color: #FFF;
   color: #02AC46;
   border: 1px solid #02AC46; }
+
+/* section more projects */
+.moreProjects {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1F1F1;
+  text-align: center;
+  margin-bottom: 50px;
+  height: 400px; }
+  .moreProjects .more {
+    background-color: #FFF;
+    width: 80%;
+    height: 200px;
+    margin-top: 40px;
+    padding: 15px;
+    font-size: 20px;
+    color: #262626;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); }
+    .moreProjects .more h1 {
+      text-transform: uppercase; }
+    .moreProjects .more button {
+      width: 70px;
+      height: 50px;
+      font-size: 25px;
+      cursor: pointer;
+      background-color: #262626;
+      border: none; }
+      .moreProjects .more button a {
+        color: #FFF; }
+      .moreProjects .more button:hover {
+        background-color: #FFF;
+        border: 2px solid #262626; }
+        .moreProjects .more button:hover a {
+          color: #262626; }
+    .moreProjects .more:hover {
+      color: #02AC46; }
 
 /* Media queries */
 @media (max-width: 767px) {
