@@ -24,11 +24,31 @@ header {
     background-color: #1BB358;
     width: 100%;
     border-bottom: 2px solid #32BA68;
+    .topMenuHamburger {
+        button {
+            display: none;
+            border: 2px solid $bright-color;
+            background-color: $main-color;
+            a {
+                text-decoration: none;
+                color: $bright-color;
+                font-size: 20px;
+            }
+            &:hover,
+            &:active {
+                border: 2px solid $main-color;
+                background-color: $bright-color;
+                a {
+                    color: $main-color;
+                }
+            }
+        }
+    }
     nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        height: 57px;
+        height: 100%;
         h2 {
             color: $bright-color;
         }
@@ -51,6 +71,7 @@ header {
                     color: $main-color;
                     background-color: $bright-color;
                     transition: 0.5s;
+                    width: 100%;
                 }
             }
         }
@@ -145,15 +166,17 @@ header {
     .grid-container {
         width: 80%;
         margin: 0 auto;
-        padding-bottom: 50px;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        justify-items: center;
+        padding: 40px 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         .skillsIcon {
             background-color: $bright-color;
             width: 150px;
             height: 150px;
-            margin-top: 40px;
+            margin: 20px;
             padding: 15px;
             font-size: 50px;
             color: $dark-color;
@@ -383,28 +406,37 @@ header {
 @media(max-width: 767px) {
     /* header */
 
-//     header {
-//         nav {
-//             .topnav {
-//                 li:not(:last-child) {
-//                     display: none;
-//                 }
-//                 .icon {
-//                     display: block;
-//                 }
-//             }
-//             .topnav.responsive {
-//                 position: relative;
-//             }
-//             .topnav.responsive .icon {
-//                 position: absolute;
-//                 right: 0;
-//                 top: 0;
-//             }
-//             .topnav.responsive li {
-//                 display: flex;
+    header {
+        nav {
+            flex-direction: column;
+            .topMenuHamburger {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 80%;
+                button {
+                    display: block;
+                }
+            }
+            .topnav {
+                li {
+                    display: none;
+                }
+            }
+            .topnav.responsive {
+                position: relative;
+                flex-direction: column;
+                align-items: center;
+            }
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .topnav.responsive li {
+                display: flex;
                 
-//             }
-//         }
-//     }
+            }
+        }
+    }
 }

@@ -17,11 +17,24 @@ header {
   background-color: #1BB358;
   width: 100%;
   border-bottom: 2px solid #32BA68; }
+  header .topMenuHamburger button {
+    display: none;
+    border: 2px solid #FFF;
+    background-color: #02AC46; }
+    header .topMenuHamburger button a {
+      text-decoration: none;
+      color: #FFF;
+      font-size: 20px; }
+    header .topMenuHamburger button:hover, header .topMenuHamburger button:active {
+      border: 2px solid #02AC46;
+      background-color: #FFF; }
+      header .topMenuHamburger button:hover a, header .topMenuHamburger button:active a {
+        color: #02AC46; }
   header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 57px; }
+    height: 100%; }
     header nav h2 {
       color: #FFF; }
     header nav .topnav {
@@ -41,7 +54,8 @@ header {
         header nav .topnav a:hover {
           color: #02AC46;
           background-color: #FFF;
-          transition: 0.5s; }
+          transition: 0.5s;
+          width: 100%; }
 
 .hero {
   background-color: #02AC46;
@@ -116,15 +130,17 @@ header {
   .skills .grid-container {
     width: 80%;
     margin: 0 auto;
-    padding-bottom: 50px;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-items: center; }
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
     .skills .grid-container .skillsIcon {
       background-color: #FFF;
       width: 150px;
       height: 150px;
-      margin-top: 40px;
+      margin: 20px;
       padding: 15px;
       font-size: 50px;
       color: #262626;
@@ -305,6 +321,27 @@ header {
 
 /* Media queries */
 @media (max-width: 767px) {
-  /* header */ }
+  /* header */
+  header nav {
+    flex-direction: column; }
+    header nav .topMenuHamburger {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 80%; }
+      header nav .topMenuHamburger button {
+        display: block; }
+    header nav .topnav li {
+      display: none; }
+    header nav .topnav.responsive {
+      position: relative;
+      flex-direction: column;
+      align-items: center; }
+    header nav .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0; }
+    header nav .topnav.responsive li {
+      display: flex; } }
 
 /*# sourceMappingURL=style.css.map */
