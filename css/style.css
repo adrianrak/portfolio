@@ -319,6 +319,51 @@ header {
     .moreProjects .more:hover {
       color: #02AC46; }
 
+/* section Contact */
+.contact {
+  background-color: #212121;
+  text-align: center; }
+  .contact h1 {
+    color: #FFF;
+    padding-top: 15px; }
+  .contact h4 {
+    margin: 10px;
+    color: #7B7B7B; }
+  .contact p {
+    color: #02AC46; }
+  .contact h4 + a {
+    color: #02AC46;
+    text-decoration: none; }
+  .contact button {
+    margin: 25px 10px;
+    height: 40px;
+    width: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: inherit;
+    border: 2px solid #02AC46; }
+    .contact button a {
+      color: #02AC46;
+      text-decoration: none;
+      padding: 10px;
+      font-weight: bold; }
+    .contact button:hover {
+      background-color: #FFF;
+      border: 1px solid #02AC46; }
+      .contact button:hover a {
+        color: #02AC46; }
+
+footer {
+  background-color: black;
+  height: 60px;
+  color: #FFF;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  footer p {
+    padding: 10px; }
+
 /* Media queries */
 @media (max-width: 767px) {
   /* header */

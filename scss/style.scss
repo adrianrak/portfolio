@@ -400,6 +400,63 @@ header {
     }
 }
 
+/* section Contact */
+
+.contact {
+    background-color: #212121;
+    text-align: center;
+    h1 {
+        color: $bright-color;
+        padding-top: 15px;
+    }
+    h4 {
+       margin: 10px;
+        color: #7B7B7B;
+    }
+    p {
+        color: $main-color;
+    }
+    h4 + a {
+        color: $main-color;
+        text-decoration: none;
+    }
+    button {
+        margin: 25px 10px;
+        height: 40px;
+        width: 60px;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: inherit;
+        border: 2px solid $main-color;
+        a {
+            color: $main-color;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+        }
+        &:hover {
+            background-color: $bright-color;
+            border: 1px solid $main-color;
+            a {
+                color: $main-color;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: black;
+    height: 60px;
+    color: $bright-color;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        padding: 10px;
+    }
+
+}
 
 /* Media queries */
 
