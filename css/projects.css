@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+/* Variables */
+.showProjects {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1F1F1; }
+  .showProjects .projectsContainer {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0; }
+    .showProjects .projectsContainer .boxProject {
+      width: 400px;
+      height: 350px;
+      margin: 30px;
+      background-color: #FFF; }
+      .showProjects .projectsContainer .boxProject img {
+        width: 100%;
+        height: 200px; }
+      .showProjects .projectsContainer .boxProject .text {
+        font-size: 15px;
+        padding: 8px 12px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .showProjects .projectsContainer .boxProject .text h5 {
+          font-size: 15px; }
+        .showProjects .projectsContainer .boxProject .text button {
+          width: 40px;
+          height: 40px;
+          font-size: 20px;
+          text-align: center;
+          cursor: pointer;
+          background-color: #02AC46;
+          border: none;
+          margin: 10px; }
+          .showProjects .projectsContainer .boxProject .text button a {
+            color: #FFF; }
+          .showProjects .projectsContainer .boxProject .text button:hover {
+            background: #FFF;
+            border: 1px solid #02AC46; }
+            .showProjects .projectsContainer .boxProject .text button:hover a {
+              color: #02AC46; }
+      .showProjects .projectsContainer .boxProject:hover {
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); }
+
+/*# sourceMappingURL=projects.css.map */
